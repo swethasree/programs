@@ -1,0 +1,61 @@
+<style>
+.menu{
+list-style-type:none;
+}
+.menu li{
+font-size:15px;
+padding:10px;
+}
+.menu li a div{
+height:55px;
+width:0px;
+padding-left:63px;
+display:inline-block;
+background:url('jI86i.png') no-repeat;
+line-height:50px;
+}
+.menu li a div.instagram{
+background-position:-31px -39px;
+}
+.menu li a div.Twitter{
+background-position:-159px -33px;
+}
+.menu li a div.facebook{
+background-position:-282px -24px;
+}
+.menu li a div.vk{
+background-position:-33px -288px;
+}
+.menu li a div.printer{
+background-position:-154px -285px;
+}
+.menu li a div.youtube{
+background-position:-286px -285px;
+}
+.menu li a div.instagram:hover{
+background-position:-31px -162px;
+}
+.menu li a div.Twitter:hover{
+background-position:-159px -157px;
+}
+.menu li a div.facebook:hover{
+background-position:-291px -153px;
+}
+.menu li a div.vk:hover{
+background-position:-32px -417px;
+}
+.menu li a div.printer:hover{
+background-position:-161px -411px;
+}
+.menu li a div.youtube:hover{
+background-position:-286px -418px;
+}
+.div1{
+background-color:#c88fd6;
+width:20%;
+
+}
+.div1:hover{
+background-color::#7b89a0;
+}
+</style>

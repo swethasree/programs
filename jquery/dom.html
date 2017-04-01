@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+         #test1{
+    width:200px;
+    height:200px;
+    background-color:blue;
+    color:white;
+    
+    }
+    </style>
+   
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div id="test1">This is a paragraph.</div>
+   
+    <input type="button" value="text" id="text" />
+    <input type="button" value="html" id="html" />
+    <input type="button" value="val" id="val" />
+    <input type="text" placeholder="email" id="email" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#text").click(function(){
+        $("#test1").text("Hello world!");
+    });
+    $("#html").click(function(){
+        $("#test1").html("<b>Hello world!</b> how are you");
+    });
+    $("#val").click(function(){
+        $("#email").val("Dolly Duck");
+    });
+});
+    </script>
+
+</body>
+</html>

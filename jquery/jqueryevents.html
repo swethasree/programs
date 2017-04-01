@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .myclass,.myclass1,.myclass2,.myclass3,.myclass4 {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            color: black;
+            float:left;
+            margin:25px;
+        }
+
+        .btnhide,.btnhide1,.btnhide2,.btnhide3,.btnhide4 {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div class="myclass">Double cick on the button!!!!!</div>
+    
+    <input type="button" value="click" class="btnhide" /><br />
+    <div class="myclass1">mouse enter on the button</div>
+    <input type="button" value="click" class="btnhide1" /><br />
+    <div class="myclass2">single click on the button</div>
+    <input type="button" value="click" class="btnhide2" /><br />
+    <div class="myclass3">Double cick on the button!!!!!</div>
+    
+    <input type="button" value="click" class="btnhide3" /><br />
+    <div class="myclass4">
+        <select id="se1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btnhide").dblclick(function () {
+                alert("HELLO WELLCOME");
+            });
+
+            $(".btnhide1").mouseenter(function () {
+                alert("mouseenter");
+            });
+           
+        
+            $(".btnhide2").click(function () {
+                alert(" this is single click HELLO WELLCOME");
+            });
+            $(".btnhide3").mouseleave(function () {
+               $(this).css("color","#00F")
+            });
+            $("#se1").onchange(function () {
+                alert(" this is single click HELLO WELLCOME");
+            });
+
+
+        
+  
+        });
+    </script>
+</body>
+</html>

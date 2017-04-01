@@ -1,0 +1,19 @@
+<html>
+<script>
+	var Shape = function()
+	{
+		this.shapeName="None";
+		throw new error("can not create an instance f n abstract class");
+	}
+	Shape.prototype.draw=function()
+	{
+	return "+Drawing" + this.shapeName;
+	}
+	var Circle =function(shapeName)
+	{
+	this.shapeName= shapeName;
+	}
+	Circle.prototype = Object.create(Shape.prototype);
+	//Object.create() method used to create an object without using the function constructor
+</script>
+</html>

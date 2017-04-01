@@ -1,0 +1,22 @@
+<html>
+<script>
+var Employee= function (name)
+	{
+	this.name=name;
+	}
+	Employee.prototype.getName = function()
+	{
+	return this.name;
+	}
+	var PermanentEmployee = function (annualSalary)
+	{
+	this.annualSalary= annualSalary;
+	}
+	var employee = new Employee("swetha"); 
+	PermanentEmployee.prototype = employee;
+	var pe = new PermanentEmployee(2222);
+	document.write(pe.getName());
+	
+	
+</script>
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <select id="ddlTheme" onchange="setColor()">
+        <option value="Select Color">Select Color</option>
+        <option value="#cc7427">orange</option>
+        <option value="##1ace56">Green</option>
+        <option value="#111111">black</option>
+        <option value="#c9cc28">yellow</option>
+        <option value="#b72c35">Red</option>
+        <option value="#cc269d">Pink</option>
+        <option value="#91171d">Dark red</option>
+    </select>
+    <script type="text/javascript">
+        window.onload = function () {
+            if (document.cookie.length != 0) {
+                var nameValueArray = document.cookie.split("="); //reading cookie
+                document.bgColor = nameValueArray[1];
+                document.getElementById("ddlTheme").value = nameValueArray[1];
+            }
+        }
+        function setColor()
+        {
+            var selectedColor = document.getElementById("ddlTheme").value;
+            if (selectedColor != "Select color ")
+            {
+                document.bgColor = selectedColor;
+                document.cookie = "color=" +selectedColor + ";expires=wed, 1 mar 2017 01:00:00 PT;"; //storing cookie
+            }
+        }
+    </script>
+</body>
+</html>

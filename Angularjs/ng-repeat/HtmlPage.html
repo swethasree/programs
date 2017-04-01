@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="JavaScript.js"></script>
+</head>
+
+<body  style="font-family:Arial;">
+    <div ng-controller="myController">
+        <table>
+            <thead>
+                <tr>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Gender</td>
+                    <td>Salary</td>
+                </tr>
+
+            </thead>
+            <tr ng-repeat="employee in emp">
+                <td>{{employee.firstName}}</td>
+                <td>{{employee.lastName}}</td>
+                <td>{{employee.gender}}</td>
+                <td>{{employee.salary}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!Document html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+	<input type="button" value="append" id="btnapend"/>
+	<input type="button" value="prepend" id="btnpre"/>
+	<input type="button" value="after" id="btnafter"/>
+	<input type="button" value="before" id="btnbefore"/>
+	<input type="button" value="remove" id="btnremove"/>
+	<input type="button" value="empty" id="btnempty"/>
+<div>
+<span>Every time you click the button, getRndInteger(min, max) returns a random number between 1 and 10 (both included):</span>
+</div>
+</body>

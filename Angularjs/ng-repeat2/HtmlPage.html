@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="JavaScript.js"></script>
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+        <ul>
+            <li ng-repeat="country in countries">
+                {{country.name}}
+                <ul>
+                    <li ng-repeat="city in country.cities">
+                        {{city.name}}
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

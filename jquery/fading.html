@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+   <style>
+       #div1 {
+           width:200px;
+           height:200px;
+           display:none;
+           background-color:black;
+
+       }
+   </style>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div id="div1"></div>
+    <input type="button" value="fadein" id="fadein"/>
+    <input type="button" value="fadeout" id="fadeout" />
+    <input type="button" value="fadetoggle" id="fadetoggle" />
+    <input type="button" value="fadeto" id="fadeto" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#fadein").click(function () {
+                $("#div1").fadeIn(3000,myfun1);
+            });
+            $("#fadeout").click(function () {
+                $("#div1").fadeOut(3000,myfunc);
+            });
+            $("#fadetoggle").click(function () {
+                $("#div1").fadeToggle(4000,myfunc1);
+            });
+            $("#fadeto").click(function () {
+                $("#div1").fadeTo(4000,0.6, myfunc1);
+            });
+        });
+        function myfun1() {
+            alert("fadin method completed");
+        }
+        function myfunc() {
+            alert("fadout method completed");
+        }
+        function myfunc1() {
+            alert("fadetoggle method completed");
+        }
+        function myfunc2() {
+            alert("fadetoggle method completed");
+        }
+    </script>
+</body>
+</html>

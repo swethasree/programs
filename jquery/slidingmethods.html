@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            display: none;
+            background-color: black;
+            margin:auto;
+        }
+        button {
+            position:absolute;
+        }
+    </style>
+    <meta charset="utf-8" />
+</head>
+<body>
+  
+    <input type="button" value="slidedown" id="slidedown" />
+    <input type="button" value="slideup" id="slideup" />
+    <input type="button" value="slidetoggle" id="slidetoggle" />
+    <input type="button" value="stop" id="stop" />
+    <div id="div1"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#slidedown").click(function () {
+                $("#div1").slideDown(3000,myfun1);
+            });
+            $("#slideup").click(function () {
+                $("#div1").slideUp(3000,myfunc);
+            });
+            $("#slidetoggle").click(function () {
+                $("#div1").slideToggle(4000,myfunc1);
+            });
+            $("#fadeto").click(function () {
+                $("#div1").stop();
+            });
+        });
+        function myfun1() {
+            alert("slidedown method completed");
+        }
+        function myfunc() {
+            alert("slideup method completed");
+        }
+        function myfunc1() {
+            alert("slidetoggle method completed");
+        }
+        function myfunc2() {
+            alert("fadetoggle method completed");
+        }
+    </script>
+</body>
+</html>

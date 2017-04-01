@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+   <p id="p1">paragraph1</p>
+    <p id="p2">paragraph2</p>
+    
+   
+    <input type="button" value="hide" id="hide"/>
+    <input type="button" value="show" id="show" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("#p1").hide();
+
+                
+            });
+            $("#show").click(function () {
+                $("#p1").show();
+
+
+            });
+            
+        });
+    </script>
+</body>
+</html>

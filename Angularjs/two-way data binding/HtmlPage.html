@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="JavaScript.js"></script>
+</head>
+<body ng-Controller="myController" >
+   <table>
+       <tr>
+           <td> Name:</td>
+           <td>
+              <input type="text" ng-model="emp.name" />
+           </td>
+       </tr>
+       <tr>
+           <td>salary:</td>
+           <td><input type="text" ng-model="emp.salary"/></td>
+       </tr>
+       <tr>
+           <td>position:</td>
+           <td>
+             <input type="text" ng-model="emp.position" />  
+           </td>
+       </tr>
+   </table>
+    <table>
+        <tr>
+            <td> Name:</td>
+            <td>
+             {{emp.name}}
+            </td>
+        </tr>
+        <tr>
+            <td>salary:</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+        <tr>
+            <td>position:</td>
+            <td>
+               {{emp.position}}
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

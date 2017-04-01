@@ -1,0 +1,45 @@
+<!Document html>
+<body>
+<h1 id="h">my first javascript program</h1>
+<input type="button" value="change color" onclick="color();">
+
+
+<input type="button" value="hide text" onclick="hide();">
+
+
+<!--printing date-->
+<p id="p1"></p>
+<input type="button" value="date" onclick="date();"/>
+
+<p id="s" style="display:none">Hello everyonehow are you</p>
+<input type="button" value="more data" onclick="open()">
+<p id="demo"></p>
+
+</body>
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+document.write("5+10="+5+10);
+document.write("multiplicat 5*10="+5*10);
+document.write("ivision+"+5/10);
+document.write(5%10);
+function date()
+{
+//getting element by id
+
+}
+function color(){
+//changing color for the element
+document.getElementById('h').style.color='red';
+}
+function hide()
+{
+//hiding elements
+document.getElementById('h').style.display='none';
+}
+function open()
+{
+document.getElementById('s').style.display='block';
+}
+window.alert(2+7);
+</script>
+</html>

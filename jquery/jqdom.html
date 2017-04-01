@@ -1,0 +1,29 @@
+<!Document html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<input type="button" value="text method" id="btntxt"/>
+<input type="button" value="html method" id="btnhtml"/>
+<input type="button" value="val method" id="btnval"/>
+<div>
+<span>Every time you click the button, getRndInteger(min, max) returns a random number between 1 and 10 (both included):</span>
+</div>
+</body>
+<script>
+$(document).ready(function(){
+$("#btntext").click(function(){
+alert($("div").text());
+
+});
+$("#btnhtml").click(function(){
+alert($("div").html());
+});
+$("#btnval").click(function(){
+alert($("div").val());
+});
+});
+</script>
+</html>
